@@ -5,7 +5,8 @@ Breve descrição do que o seu projeto faz.
 ## :technologist: Membros da equipe
 
 Matrícula, nome e curso dos participantes.
-
+473618 - Evynne Ferreira Avelino - Engenharia de Software
+511329 - Guilherme Damasceno Nobre - Engenharia de Software
 ## :people_holding_hands: Papéis ou tipos de usuário da aplicação
 
 Informe aqui os tipos de usuário que irão interagir com a aplicação. Ex: administrador, locador, locatario, usuário não logado.
