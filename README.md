@@ -16,8 +16,8 @@ Sistema de venda de ingressos online para eventos de vaquejada.
 
 ## :spiral_calendar: Entidades ou tabelas do sistema
 
--Bilhete
--Evento
+-Bilhete <br />
+-Evento<br />
 -Comentário
 
 ## :triangular_flag_on_post:	 Principais funcionalidades da aplicação
