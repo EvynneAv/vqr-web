@@ -1,25 +1,30 @@
-# :checkered_flag: NOME DO PROJETO
+# :checkered_flag: VQR 
 
-Breve descrição do que o seu projeto faz.
+Sistema de venda de ingressos online para eventos de vaquejada.
 
 ## :technologist: Membros da equipe
 
-Matrícula, nome e curso dos participantes.
 473618, Evynne Ferreira Avelino, Engenharia de Software <br />
 511329 - Guilherme Damasceno Nobre - Engenharia de Software
+
 ## :people_holding_hands: Papéis ou tipos de usuário da aplicação
 
-Informe aqui os tipos de usuário que irão interagir com a aplicação. Ex: administrador, locador, locatario, usuário não logado.
-
-> Tenha em mente que obrigatoriamente a aplicação deve possuir funcionalidades acessíveis a todos os tipos de usuário e outra funcionalidades restritas a certos tipos de usuários.
+-Usuário não registrado
+-Usuário registrado
+-Administrador
+-Produtor
 
 ## :spiral_calendar: Entidades ou tabelas do sistema
 
-Liste as principais entidades do sistema.
+-Bilhete
+-Evento
+-Comentário
 
 ## :triangular_flag_on_post:	 Principais funcionalidades da aplicação
 
 Descreve ou liste brevemente as principais funcionalidades da aplicação que será desenvolvida. Destaque a funcionalidades que serão acessévies a todos os usuários e aquelas restriras a usuários logados.
+
+-O produtor pode criar eventos, e nestes definir a quantidade de bilhetes disponíveis à venda. Ademais, pode 
 
 
 ----
