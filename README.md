@@ -25,7 +25,7 @@ Sistema de venda de ingressos online para eventos de vaquejada.
 Descreve ou liste brevemente as principais funcionalidades da aplicação que será desenvolvida. Destaque a funcionalidades que serão acessévies a todos os usuários e aquelas restriras a usuários logados.
 
 - O produtor pode criar eventos, e nestes definir a quantidade de ingressos disponíveis à venda, além de outras informações. O produtor pode ver um relatório dos ingressos vendidos em um evento, cancelar ou atualizar informações do mesmo.
-- O usuário registrado pode vizualizar os detalhes de eventos que ocorrerão e comprar ingressos para ele ou para outras pessoas.
+- O usuário registrado pode vizualizar os detalhes de eventos que ocorrerão e comprar ingressos.
 - O usuário não registrado pode consultar eventos e ter acesso a informações dos eventos.
 - O administrador terá a função de autorizar ou remover a publicação ou atualização de um evento. O administrador poderá também ver os usuários do sistema e excluir algum usuário específico.
 
