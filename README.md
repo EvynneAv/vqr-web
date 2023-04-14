@@ -27,7 +27,7 @@ Descreve ou liste brevemente as principais funcionalidades da aplicação que se
 - O produtor pode criar eventos, e nestes definir a quantidade de ingressos disponíveis à venda, além de outras informações. O produtor pode ver um relatório dos ingressos vendidos em um evento, cancelar ou atualizar informações do mesmo.
 - O usuário registrado pode vizualizar os detalhes de eventos que ocorrerão e comprar ingressos.
 - O usuário não registrado pode consultar eventos e ter acesso a informações dos eventos.
-- O administrador terá a função de autorizar ou remover a publicação ou atualização de um evento. O administrador poderá também ver os usuários do sistema e excluir algum usuário específico.
+- O administrador poderá ver os usuários do sistema e excluir algum usuário específico.
 
 ---
 
