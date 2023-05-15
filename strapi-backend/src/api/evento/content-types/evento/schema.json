@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eventos",
+  "info": {
+    "singularName": "evento",
+    "pluralName": "eventos",
+    "displayName": "evento"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "parque": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "local": {
+      "type": "string"
+    },
+    "data": {
+      "type": "date"
+    },
+    "hora": {
+      "type": "time"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "qtd_ingressos": {
+      "type": "integer"
+    }
+  }
+}
