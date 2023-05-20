@@ -1,11 +1,17 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+
 import Login from './components/login.vue';
 </script>
 
 <template>
-
-  <login/>
+<html>
+  <head>
+    <title>Vue 3 + Vite + Typescript</title>
+  </head>
+  <body>
+    <Login/>
+  </body>
+</html>
 
 </template>
 
