@@ -1,6 +1,6 @@
 <script setup>
 
-import Login from './components/login.vue';
+import home from './pages/home.vue';
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import Login from './components/login.vue';
     <title>Vue 3 + Vite + Typescript</title>
   </head>
   <body>
-    <Login/>
+    <home/>
   </body>
 </html>
 

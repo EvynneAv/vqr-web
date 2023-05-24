@@ -49,7 +49,7 @@ const count = ref(0)
       </symbol>
     </svg>
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <!-- <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
               id="bd-theme"
               type="button"
@@ -82,30 +82,26 @@ const count = ref(0)
           </button>
         </li>
       </ul>
-    </div>
+    </div> -->
 
     
 <main class="form-signin w-100 m-auto">
   <form>
-    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <img class="mb-4" src="../../LOGO.png" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Entrar</h1>
 
     <div class="form-floating">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
+      <label for="floatingInput">Email</label>
     </div>
     <div class="form-floating">
       <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
+      <label for="floatingPassword">Senha</label>
     </div>
 
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
+    <p class="mt-5 mb-3 text-body-secondary">&copy; 2023</p>
   </form>
 </main>
     
@@ -197,7 +193,7 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5f5f5;  
+  background-color: #fff;  
 }
 
 .form-signin {

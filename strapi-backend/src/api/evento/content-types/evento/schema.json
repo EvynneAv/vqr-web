@@ -4,7 +4,7 @@
   "info": {
     "singularName": "evento",
     "pluralName": "eventos",
-    "displayName": "evento"
+    "displayName": "Evento"
   },
   "options": {
     "draftAndPublish": true
@@ -26,14 +26,11 @@
     "data": {
       "type": "date"
     },
-    "hora": {
+    "horario": {
       "type": "time"
     },
     "descricao": {
       "type": "text"
-    },
-    "qtd_ingressos": {
-      "type": "integer"
     }
   }
 }
