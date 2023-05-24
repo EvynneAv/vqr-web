@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eventos",
+  "info": {
+    "singularName": "evento",
+    "pluralName": "eventos",
+    "displayName": "Evento"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "parque": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "local": {
+      "type": "string"
+    },
+    "data": {
+      "type": "date"
+    },
+    "horario": {
+      "type": "time"
+    },
+    "descricao": {
+      "type": "text"
+    }
+  }
+}
