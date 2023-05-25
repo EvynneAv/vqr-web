@@ -1,37 +1,20 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-const eventos = ref([
-    {
-        nome: 'Evento 1',
-        descricao: 'Descrição do evento 1',
-        data: '2021-10-10',
-        horario: '10:00',
-        local: 'Local do evento 1',
-        valor: 10.00,
-        imagem: 'https://picsum.photos/200/300'
 
-    },
-    {
-        nome: 'Evento 2',
-        descricao: 'Descrição do evento 2',
-        data: '2021-10-10',
-        horario: '10:00',
-        local: 'Local do evento 2',
-        valor: 10.00,
-        imagem: 'https://picsum.photos/200/300'
-
-    }
-]);
+defineProps<{
+  nome: string,
+  descricao: string,
+  valor: number
+}>()
 
 </script>
 
 <template>
   <div class="card shadow-sm">
-    <img :src="getUploadURL(cover.url)">
     <div class="card-body">
-      <h3 class="card-title">{{ title }}</h3>
-      <p class="card-text">Volume: {{ number }}</p>
-      <p class="card-text">Price: {{ price }}</p>
+      <h3 class="card-title">{{ nome }}</h3>
+      <p class="card-text">Descrição: {{ descricao }}</p>
+      <p class="card-text">Preço: {{ valor }}</p>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group">
           <button type="button" class="btn btn-sm btn-outline-secondary">View</button>

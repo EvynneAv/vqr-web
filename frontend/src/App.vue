@@ -1,18 +1,10 @@
-<script setup>
+<script setup lang="ts">
 
 import home from './pages/home.vue';
 </script>
 
 <template>
-<html>
-  <head>
-    <title>Vue 3 + Vite + Typescript</title>
-  </head>
-  <body>
-    <home/>
-  </body>
-</html>
-
+<home/>
 </template>
 
 <style scoped>
