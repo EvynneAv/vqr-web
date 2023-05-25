@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+// import { ref } from 'vue'
 
 defineProps({
   msg: String,
 })
 
-const count = ref(0)
+// const count = ref(0)
 </script>
 
 <template>
@@ -103,6 +103,7 @@ const count = ref(0)
     <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
     <p class="mt-5 mb-3 text-body-secondary">&copy; 2023</p>
   </form>
+  <router-link to="/">menu</router-link>
 </main>
     
   </body>

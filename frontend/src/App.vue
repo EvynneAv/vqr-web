@@ -1,12 +1,12 @@
 <script setup lang="ts">
+// import home from './pages/Home.vue';
 
-import home from './pages/home.vue';
 </script>
 
 <template>
-<home/>
+<!-- <home/> -->
+<router-view></router-view>
 </template>
 
 <style scoped>
-
 </style>

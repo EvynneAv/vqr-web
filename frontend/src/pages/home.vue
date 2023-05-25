@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import EventoCard from '../components/eventoCard.vue';
+import EventoCard from '../components/EventoCard.vue';
 
 defineProps({
   msg: String,
@@ -40,7 +40,7 @@ const eventos = ref([
 
     
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="    https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
     
@@ -107,6 +107,10 @@ const eventos = ref([
         <div class="col" v-for="evento in eventos">
         <EventoCard :nome="evento.nome" :descricao="evento.descricao" :valor="evento.valor"></EventoCard>
         </div>
+        <h1>login</h1>
+        <router-link to="/login">login</router-link>
+        <button to="/login" type="button" class="btn btn-sm btn-outline-secondary">Login</button>
+        
 
 
 
