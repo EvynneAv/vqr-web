@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ingressos",
+  "info": {
+    "singularName": "ingresso",
+    "pluralName": "ingressos",
+    "displayName": "ingresso"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "evento": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::evento.evento",
+      "inversedBy": "ingressos"
+    },
+    "usuario": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::usuario.usuario",
+      "inversedBy": "ingressos"
+    }
+  }
+}

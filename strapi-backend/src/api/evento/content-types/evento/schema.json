@@ -42,6 +42,12 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "ingressos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ingresso.ingresso",
+      "mappedBy": "evento"
     }
   }
 }

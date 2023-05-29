@@ -1,20 +1,24 @@
 <script setup lang="ts">
-// import { ref } from 'vue'
+import { Evento } from '../api/eventoService';
+import { useUploadFile } from '../composables/useUploadURL';
+const evento = defineProps<Evento>()
 
-defineProps<{
-  nome: string,
-  descricao: string,
-  valor: number
-}>()
+
+
 
 </script>
 
 <template>
+  <router-link :to="`/mangas/${evento.id}`"></router-link>
   <div class="card shadow-sm">
+    <figure>
+      <img class="cover" :src="useUploadFile(cover.url)">
+    </figure>
     <div class="card-body">
       <h3 class="card-title">{{ nome }}</h3>
-      <p class="card-text">Descrição: {{ descricao }}</p>
-      <p class="card-text">Preço: {{ valor }}</p>
+      <p class="card-text">Número do evento: {{ id }}</p>
+      <p class="card-text">Parque: {{ parque }}</p>
+      <p class="card-text">Cidade: {{ cidade }}</p>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group">
           <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
