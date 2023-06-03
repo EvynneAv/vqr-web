@@ -1,27 +1,6 @@
 import { api } from '../baseConfig'
+import{EventoCollection } from '../types/index'
 
-export interface Evento{
-    id:number,
-    nome:string,
-    parque:string,
-    cidade:string,  
-    cover: {
-        url:string
-    }
-}
-
-export interface Pagination{
-    page:number,
-    pageCount:number,
-    pageSize:number,
-    total:number,
-}
-
-export interface EventoCollection {
-    items: Evento[],
-    pagination: Pagination
-  }
-  
 
 class EventoService {
 

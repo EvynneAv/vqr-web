@@ -1,11 +1,8 @@
 <script setup lang="ts">
 // import { ref } from 'vue'
 
-defineProps({
-  msg: String,
-})
 
-// const count = ref(0)
+
 </script>
 
 <template>
@@ -26,6 +23,7 @@ defineProps({
 
     <link href="sign-in.css" rel="stylesheet">
   </head>
+  
   <header data-bs-theme="dark">
     <header class="p-3 text-bg-dark">
       <div class="container">

@@ -34,20 +34,27 @@
       "type": "text"
     },
     "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "ingressos": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::ingresso.ingresso",
       "mappedBy": "evento"
+    },
+    "valor_do_ingresso": {
+      "type": "integer"
+    },
+    "qtd_ingressos": {
+      "type": "integer"
     }
   }
 }
