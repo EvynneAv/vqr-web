@@ -5,7 +5,7 @@ Sistema de venda de ingressos online para eventos de vaquejada.
 ## :technologist: Membros da equipe
 
 473618, Evynne Ferreira Avelino, Engenharia de Software <br />
-511329, Guilherme Damasceno Nobre, Engenharia de Software
+511329, Guilherme Damasceno Nobre, Engenharia de Software.
 
 ## :people_holding_hands: Papéis ou tipos de usuário da aplicação
 
