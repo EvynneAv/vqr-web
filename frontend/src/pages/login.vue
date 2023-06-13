@@ -1,8 +1,29 @@
 <script setup lang="ts">
-// import { ref } from 'vue'
+import { ref } from 'vue'
+import { useUserService } from '../api/userService'
+import { useRouter } from 'vue-router'
+import { useErrorUtil } from '../composables/useApplicationError'
 
+const identifier = ref("")
+const password = ref("")
+const message = ref("")
+const router = useRouter()
 
-
+async function authenticate(event: MouseEvent) {
+    event.preventDefault()
+    event.stopPropagation()
+    const userService = useUserService()
+    const result = await userService.login(identifier.value, password.value)
+    if(useErrorUtil().isAppError(result)) {
+        message.value = result.message
+    } else {
+        if(result.role.type == "admin") {
+            router.push("/admin")
+        } else {
+            router.push("/")
+        }
+    }
+}
 </script>
 
 <template>
@@ -21,7 +42,7 @@
 
 <!-- Custom styles for this template -->
 
-    <link href="sign-in.css" rel="stylesheet">
+    
   </head>
   
   <header data-bs-theme="dark">
@@ -77,16 +98,16 @@
     <h1 class="h3 mb-3 fw-normal">Entrar</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" v-model="identifier" required>
       <label for="floatingInput">Email</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <input type="password" class="form-control" id="passwordInput" v-model="password" required>
       <label for="floatingPassword">Senha</label>
     </div>
 
 
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
+    <input type="submit" class="float-end btn btn-primary" value="Enviar" @click="authenticate"/>
     <p class="mt-5 mb-3 text-body-secondary">&copy; 2023</p>
   </form>
 
