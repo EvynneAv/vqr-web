@@ -17,10 +17,10 @@
       "target": "api::evento.evento",
       "inversedBy": "ingressos"
     },
-    "usuario": {
+    "user": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::usuario.usuario",
+      "target": "plugin::users-permissions.user",
       "inversedBy": "ingressos"
     }
   }

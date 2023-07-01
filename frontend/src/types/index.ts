@@ -24,5 +24,67 @@ export interface Pagination{
 export interface EventoCollection {
     items: Evento[],
     pagination: Pagination
-  }
+}
+
+export interface ApplicationError {
+    name: string,
+    message: string,
+    details?: string[],
+}
+
+export interface StrapiResponse<T> {
+    data: T,
+    meta: {
+      pagination: Pagination
+    }
+}
+
+export interface StrapiError {
+    error: {
+      status: number,
+      name: string,
+      message: string,
+      details: {
+        errors: StrapiErrorDetail[]
+      }
+    }
+}
+
+export interface StrapiErrorDetail {
+    path: string[],
+    message: string,
+    name: string,
+}
+
+export interface LoginRequest {
+    identifier: string,
+    password: string
+}
+
+export interface LoginResponse {
+    jwt: string,
+    user: User
+}
+
+export interface User {
+    id: number,
+    username: string,
+    email: string,
+    role: {
+      type: string
+    }
+}
+
+export enum Status {
+    SUCCESS = "success",
+    WARNING = "warning",
+    ERROR = "danger"
+ }
+
+  export interface Message {
+    id: number,
+    content: string
+    status: Status
+}
+
   
